@@ -32,4 +32,8 @@ async def all():
     return books
 
 
+#POST method
+@app.post("/book/create_book")
+async def create(book=Body()):
+    books.append(book)
 
