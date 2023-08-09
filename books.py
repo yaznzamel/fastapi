@@ -33,9 +33,3 @@ async def all():
 
 
 
-# POST Requests
-
-
-@app.post("/create_book")
-async def create_book(new_book=Body()):
-    books.append(new_book) 
